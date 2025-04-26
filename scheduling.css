@@ -1,0 +1,169 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+a[href="index.html"] {
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+a[href="preemptive-scheduling.html"],
+a[href="nonpreemptive-scheduling.html"] {
+    cursor: pointer;
+    margin: 20px 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+a[href="preemptive-scheduling.html"]:hover,
+a[href="nonpreemptive-scheduling.html"]:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.gantt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    table, th, td {
+        font-size: 0.8rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    a[href="index.html"] {
+        font-size: 18px;
+    }
+
+    a[href="preemptive-scheduling.html"],
+    a[href="nonpreemptive-scheduling.html"] {
+        font-size: 16px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .gantt {
+        flex-direction: column;
+    }
+}

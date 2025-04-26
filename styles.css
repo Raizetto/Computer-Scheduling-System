@@ -1,0 +1,176 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 2rem;
+}
+
+a[href="index.html"] {
+  cursor: pointer;
+  padding: 5px 5px 20px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+.container-fluid{
+  margin-top: 30px;
+}
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.input-memory-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Process Form Styling */
+.process-input {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.process-input form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.process-input label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.process-input input {
+  font-size: 0.9rem;
+}
+
+.process-input button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Memory Table Styling */
+.memory-file {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+#memory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+#memory-table td {
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#memory-table td.allocated {
+  background-color: #60d394;
+  color: white;
+}
+
+#memory-table td.processed {
+  background-color: #d3d3d3;
+}
+
+/* Process Table Styling */
+.process-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+#process-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#process-table th,
+#process-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+#process-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+/* Process visual mini-tables */
+.process-table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.process-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 100%;
+  background-color: rgba(28, 148, 92, 0.7);
+  transition: width 1s ease;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 992px) {
+  .input-memory-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-input,
+  .memory-file,
+  .process-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 1rem;
+  }
+
+  .main-container {
+    padding: 1.5rem 1rem;
+  }
+
+  a[href="index.html"] {
+    font-size: 18px;
+  }
+
+  .process-input form,
+  #memory-table,
+  #process-table {
+    box-shadow: none;
+  }
+}

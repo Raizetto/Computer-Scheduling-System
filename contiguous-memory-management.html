@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contiguous Memory Management</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="container-fluid">
+            <div class="input-memory-container">
+                <!-- Left Column: Process Input -->
+                <div class="process-input">
+                    <form id="process-form">
+                        <div class="d-flex gap-2">
+                            <div class="mb-3">
+                                <label for="process-name" class="form-label">Process name</label>
+                                <input type="text" class="form-control" id="process-name" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="process-mb" class="form-label">Process size</label>
+                                <input type="number" class="form-control" id="process-mb" min="1" required />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Process</button>
+                        <button type="button" class="btn btn-primary" id="simulate-btn">Allocate</button>
+                    </form>
+    
+                    <!-- Add your process input form (as above) -->
+    
+                    <!-- Container to list the added processes (if you want to show them) -->
+                    <div id="process-tables-container">
+                        <!-- Optionally, you can populate this with process details -->
+                    </div>
+                
+                    
+        
+                </div>
+            
+                <!-- Right Column: Memory File -->
+                <div class="memory-file">
+                    <p class="text-center">Memory File (100mb)</p>
+                    <table id="memory-table">
+                        <tbody>
+                        <!-- Generated cells go here -->
+                        </tbody>
+                    </table>
+                </div>
+            
+                <!-- Process Details Table -->
+                <div class="process-section">
+                    <p class="text-center">Processes</p>
+                    <table id="process-table">
+                    <thead>
+                        <tr>
+                            <th>Process Name</th>
+                            <th>Process Size (MB)</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                <!-- Process rows go here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

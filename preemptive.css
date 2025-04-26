@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0f172a;
+}
+
+a[href="scheduling.html"] {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+label, input, select, button {
+    font-size: 16px;
+    margin: 6px 0;
+}
+select, button{
+    cursor: pointer;
+}
+
+input, select {
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f1f5f9;
+}
+
+.gantt {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    background: #e0f2fe;
+    overflow-x: auto;
+}
+
+.gantt div {
+    padding: 10px;
+    border-right: 1px solid #fff;
+    text-align: center;
+    min-width: 50px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row .form-group {
+    flex: 1;
+}
+
+#priorityInput {
+    display: none;
+}
+#quantumInput {
+    display: none;
+}
