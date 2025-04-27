@@ -1,6 +1,6 @@
 # Computer-Scheduling-System
 
-Visit the website at
+Visit the website at https://raizetto.github.io/Computer-Scheduling-System/
 
 
 This project is only inteded for submission purposes
