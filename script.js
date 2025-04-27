@@ -1,6 +1,6 @@
-// Total memory size: 10 cells, 10 MB per cell
+// Total memory size: 10 cells, 100 MB per cell
 const MEMORY_CELLS = 10;
-const CELL_SIZE_MB = 10;
+const CELL_SIZE_MB = 100;
 
 // Global memory array: null for free, or process ID for allocated
 const memoryState = Array(MEMORY_CELLS).fill(null);
@@ -88,8 +88,8 @@ function createProcessTable(processObj) {
       return;
     }
   
-    // Reject a single process if it exceeds the maximum allowed size (100 MB).
-    if (processSizeMB > 100) {
+    // Reject a single process if it exceeds the maximum allowed size (1000 MB).
+    if (processSizeMB > 1000) {
       alert("Error: A single process cannot exceed 100 MB.");
       return;
     }
@@ -273,11 +273,6 @@ function simulateProcessing(processObj) {
 
     }, totalTime);
   }
-  
-  
-  
-  
-  
 
 // Add a process row to the process table
 function addProcessRow(processObj) {
