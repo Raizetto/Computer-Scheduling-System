@@ -297,4 +297,3 @@ function updateProcessRow(processObj) {
       row.cells[2].textContent = processObj.status;
     }
 }
-  
