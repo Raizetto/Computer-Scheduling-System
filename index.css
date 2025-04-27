@@ -41,7 +41,6 @@ a:hover{
 @media (max-width: 600px) {
     .container{
         padding: 20px 15px;
-        margin-top: 20px;
     a {
         font-size: 16px;
         padding: 8px 16px;
