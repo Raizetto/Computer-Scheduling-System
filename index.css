@@ -38,7 +38,7 @@ a:hover{
     background-color: rgb(207, 207, 207);
 }
 /* Responsive tweaks */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .container {
         padding: 20px 15px;
     }
